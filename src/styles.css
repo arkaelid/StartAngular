@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --mat-primary-color: rgb(43, 156, 226);
+  --mat-accent-color: #607d8b;
+  --mat-warn-color: #f44336;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+/* Personnalisation de la toolbar */
+mat-toolbar {
+  background-color: var(--mat-primary-color) !important;
+}
