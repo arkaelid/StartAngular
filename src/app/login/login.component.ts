@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule, ValidationErrors, AbstractControl } from '@angular/forms';
-import {NgIf} from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { HelpComponent } from '../component/help/help.component';
 
 @Component({
   selector: 'crm-login',
@@ -12,10 +12,10 @@ import { MatButtonModule } from '@angular/material/button';
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    NgIf,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    HelpComponent
   ]
 })
 export class LoginComponent {

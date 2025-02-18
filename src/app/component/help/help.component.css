@@ -1,0 +1,13 @@
+.help-block {
+  color: var(--mat-warn-color);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+  min-height: 20px;
+}
+
+.help-block span {
+  display: block;
+  line-height: 1.2;
+  padding: 2px 0;
+}
