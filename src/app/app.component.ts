@@ -17,7 +17,7 @@ import { DummyComponent } from './component/dummy/dummy.component';
   standalone: true
 })
 export class AppComponent {
-  title = 'Connexion';
+  title = 'Angular TUTO';
 
   handle(event: string): void {
     console.log('clicked:', event);
