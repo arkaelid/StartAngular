@@ -33,17 +33,14 @@ export class LoginComponent {
       nonNullable: true,}),
   });
 
-  protected onSubmit(): void {
-    console.log('submitted');
+  onSubmit(): void {
     if (this.loginForm.valid) {
-      console.log('loginForm', this.loginForm.value)
       const { login, password } = this.loginForm.getRawValue();
       const res = this.authent.authentUser(login, password);
-      console.log('res', ' from service');
-    } else { 
-      console.log(this.loginForm.controls.password.errors);
+      if (res !== null) {
+        this.router.navigateByUrl('/home');
+      }
     }
-    this.router.navigateByUrl('/home');
   }
 
   private checkPassword(c: AbstractControl): ValidationErrors | null {
